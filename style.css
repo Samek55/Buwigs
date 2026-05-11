@@ -17,12 +17,9 @@
 
 body {
   min-height: 100vh;
-  background:
-    radial-gradient(circle at 20% 10%, rgba(94, 196, 149, 0.18), transparent 26rem),
-    linear-gradient(135deg, #f5f5f0 0%, var(--bg) 100%);
+  background: var(--panel);
   color: var(--text);
   font-family: Inter, Arial, Helvetica, sans-serif;
-  padding: 34px 16px;
 }
 
 button,
@@ -36,15 +33,14 @@ a {
 }
 
 .store-shell {
-  width: min(100%, 1060px);
-  margin: 0 auto;
-  padding: 22px 30px 28px;
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 24px clamp(18px, 5vw, 72px) 36px;
   background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.035), transparent 220px),
+    radial-gradient(circle at 12% 8%, rgba(94, 196, 149, 0.14), transparent 28rem),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.035), transparent 260px),
     var(--panel);
-  border: 4px solid var(--accent);
-  border-radius: 6px;
-  box-shadow: 0 34px 90px rgba(14, 22, 20, 0.28);
 }
 
 .navbar {
@@ -152,9 +148,9 @@ a {
   display: grid;
   grid-template-columns: minmax(0, 1.7fr) minmax(250px, 0.9fr);
   align-items: center;
-  gap: 28px;
-  margin: 42px auto 0;
-  max-width: 900px;
+  gap: clamp(28px, 4vw, 64px);
+  margin: 54px auto 0;
+  max-width: 1280px;
 }
 
 .hero-image img {
@@ -225,8 +221,8 @@ a {
 }
 
 .product-section {
-  max-width: 860px;
-  margin: 54px auto 0;
+  max-width: 1280px;
+  margin: 64px auto 0;
 }
 
 .section-header {
@@ -261,7 +257,7 @@ a {
 .cards {
   display: grid;
   grid-auto-flow: column;
-  grid-auto-columns: minmax(160px, 1fr);
+  grid-auto-columns: minmax(190px, 1fr);
   grid-template-rows: 1fr;
   gap: 28px;
   overflow-x: auto;
@@ -326,8 +322,8 @@ a {
   display: grid;
   grid-template-columns: 1.1fr 1fr 1.1fr;
   gap: 46px;
-  max-width: 880px;
-  margin: 72px auto 0;
+  max-width: 1280px;
+  margin: 84px auto 0;
   padding-top: 34px;
   border-top: 1px solid var(--line);
   color: var(--muted);
@@ -375,10 +371,6 @@ a {
 }
 
 @media (max-width: 850px) {
-  body {
-    padding: 18px 10px;
-  }
-
   .store-shell {
     padding: 18px;
   }
@@ -418,10 +410,6 @@ a {
 }
 
 @media (max-width: 520px) {
-  .store-shell {
-    border-width: 3px;
-  }
-
   .navbar {
     grid-template-columns: 1fr auto;
   }
