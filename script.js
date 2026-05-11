@@ -1,9 +1,11 @@
 function scrollLeftBox(id) {
-  document.getElementById(id).scrollLeft -= 300;
+  const box = document.getElementById(id);
+  box.scrollLeft -= box.clientWidth * 0.75;
 }
 
 function scrollRightBox(id) {
-  document.getElementById(id).scrollLeft += 300;
+  const box = document.getElementById(id);
+  box.scrollLeft += box.clientWidth * 0.75;
 }
 
 const searchInput = document.getElementById("searchInput");
@@ -16,9 +18,9 @@ searchInput.addEventListener("keyup", function () {
     const title = card.querySelector("h3").innerText.toLowerCase();
 
     if (title.includes(value)) {
-      card.style.display = "block";
+      card.classList.remove("is-hidden");
     } else {
-      card.style.display = "none";
+      card.classList.add("is-hidden");
     }
   });
 });

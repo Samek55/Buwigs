@@ -7,145 +7,159 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
-  <div class="container">
-
+  <main class="store-shell">
     <header class="navbar">
-      <div class="logo">🎮 JM Store</div>
+      <a class="logo" href="#" aria-label="JM Store home">
+        <span class="logo-mark">&#127918;</span>
+        <span>J M<br />Store</span>
+      </a>
 
-      <input type="text" id="searchInput" placeholder="Search here..." />
+      <label class="search-wrap" for="searchInput">
+        <span>&#128269;</span>
+        <input type="text" id="searchInput" placeholder="Search store" />
+      </label>
 
-      <nav>
+      <nav class="main-nav" aria-label="Main navigation">
         <a href="#">Discovery</a>
         <a href="#">Browse</a>
         <a href="#">News</a>
       </nav>
 
-      <button class="sign-btn">Sign in</button>
+      <div class="actions">
+        <button class="icon-btn" aria-label="Cart">&#128722;</button>
+        <button class="sign-btn">Sign in</button>
+      </div>
     </header>
 
-    <section class="hero">
+    <section class="hero" aria-labelledby="heroTitle">
       <div class="hero-image">
-        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/2195250/header.jpg" alt="FC24">
+        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/2195250/header.jpg" alt="EA Sports FC 24 football match" />
       </div>
 
-      <div class="hero-content">
-        <img class="fc-logo" src="https://cdn.cloudflare.steamstatic.com/steam/apps/2195250/header.jpg" alt="FC24 Logo">
+      <article class="hero-content">
+        <div class="game-logo">EA SPORTS FC 24</div>
+        <h1 id="heroTitle">Modern football, rebuilt for every match.</h1>
         <p>
-          What happens when football meets modern gaming?
-          Experience realistic gameplay, powerful graphics,
-          and exciting matches in FC24.
+          Feel sharper controls, realistic stadium energy, and fast digital delivery for your next game night.
         </p>
 
         <div class="hero-buttons">
           <button>Buy now</button>
-          <span>＋ Add to wishlist</span>
+          <a href="#">+ Add to wishlist</a>
         </div>
-      </div>
+      </article>
     </section>
 
     <section class="product-section">
       <div class="section-header">
         <h2>Top choices</h2>
-        <div>
-          <button onclick="scrollLeftBox('topChoices')">‹</button>
-          <button onclick="scrollRightBox('topChoices')">›</button>
+        <div class="slider-controls">
+          <button onclick="scrollLeftBox('topChoices')" aria-label="Previous top choices">&lsaquo;</button>
+          <button onclick="scrollRightBox('topChoices')" aria-label="Next top choices">&rsaquo;</button>
         </div>
       </div>
 
       <div class="cards" id="topChoices">
-        <div class="card">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="iTunes Giftcard">
+        <article class="card">
+          <span class="card-badge">5 USD</span>
+          <img src="https://images.unsplash.com/photo-1611186871348-b1ce696e52c9?auto=format&fit=crop&w=500&q=80" alt="iTunes Giftcard" />
           <h3>iTunes Giftcard</h3>
           <p>NPR 500.00</p>
-        </div>
+        </article>
 
-        <div class="card">
-          <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/578080/header.jpg" alt="PUBG">
+        <article class="card">
+          <span class="card-badge">UC</span>
+          <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/578080/header.jpg" alt="PUBG UC" />
           <h3>Pubg UC</h3>
           <p>NPR 1200.00</p>
-        </div>
+        </article>
 
-        <div class="card">
-          <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1928420/header.jpg" alt="Free Fire">
+        <article class="card">
+          <span class="card-badge">Hot</span>
+          <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1928420/header.jpg" alt="Free Fire Diamond" />
           <h3>FreeFire Diamond</h3>
           <p>NPR 950.00</p>
-        </div>
+        </article>
 
-        <div class="card">
-          <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1436990/header.jpg" alt="Valorant">
+        <article class="card">
+          <span class="card-badge">VP</span>
+          <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1436990/header.jpg" alt="Valorant Giftcard" />
           <h3>Valorant Giftcard</h3>
           <p>NPR 2700.00</p>
-        </div>
+        </article>
       </div>
     </section>
 
     <section class="product-section">
       <div class="section-header">
         <h2>Games</h2>
-        <div>
-          <button onclick="scrollLeftBox('games')">‹</button>
-          <button onclick="scrollRightBox('games')">›</button>
+        <div class="slider-controls">
+          <button onclick="scrollLeftBox('games')" aria-label="Previous games">&lsaquo;</button>
+          <button onclick="scrollRightBox('games')" aria-label="Next games">&rsaquo;</button>
         </div>
       </div>
 
       <div class="cards" id="games">
-        <div class="card">
-          <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1817190/header.jpg" alt="Spiderman">
+        <article class="card">
+          <span class="card-badge">PS</span>
+          <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1817190/header.jpg" alt="Spiderman Miles Morales" />
           <h3>Spiderman Miles Morales</h3>
           <p>NPR 8500.00</p>
-        </div>
+        </article>
 
-        <div class="card">
-          <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/814380/header.jpg" alt="Sekiro">
+        <article class="card">
+          <span class="card-badge">PC</span>
+          <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/814380/header.jpg" alt="Sekiro Shadow Die Twice" />
           <h3>Sekiro Shadow Die Twice</h3>
           <p>NPR 7500.00</p>
-        </div>
+        </article>
 
-        <div class="card">
-          <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1593500/header.jpg" alt="God of War">
+        <article class="card">
+          <span class="card-badge">New</span>
+          <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1593500/header.jpg" alt="God of War Ragnarok" />
           <h3>God of War Ragnarok</h3>
           <p>NPR 8500.00</p>
-        </div>
+        </article>
 
-        <div class="card">
-          <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1778820/header.jpg" alt="Tekken 8">
+        <article class="card">
+          <span class="card-badge">8</span>
+          <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1778820/header.jpg" alt="Tekken 8" />
           <h3>Tekken 8</h3>
           <p>NPR 12000.00</p>
-        </div>
+        </article>
       </div>
     </section>
 
-    <footer>
+    <footer class="footer">
       <div>
-        <h3>🎮 JM Store</h3>
-        <p>Your trusted digital game store.</p>
+        <a class="logo footer-logo" href="#" aria-label="JM Store home">
+          <span class="logo-mark">&#127918;</span>
+          <span>J M<br />Store</span>
+        </a>
+        <p>Your trusted digital game store for gift cards, top-ups, and PC games.</p>
       </div>
 
-      <div>
+      <address>
         <h3>Contact</h3>
-        <p>📍 Kathmandu, Nepal</p>
-        <p>📞 +977 9800000000</p>
-        <p>✉️ jmstore@gmail.com</p>
-      </div>
+        <p>Kathmandu, Nepal</p>
+        <p>+977 9800000000</p>
+        <p>jmstore@gmail.com</p>
+      </address>
 
       <div>
         <h3>About us</h3>
         <p>
-          We provide gift cards, game cards, and digital gaming products
-          at affordable prices.
+          We provide digital gaming products at affordable prices with quick support and simple checkout.
         </p>
-
-        <div class="socials">
-          <span>●</span>
-          <span>●</span>
-          <span>●</span>
-          <span>●</span>
+        <div class="socials" aria-label="Social links">
+          <a href="#" aria-label="Facebook">f</a>
+          <a href="#" aria-label="Twitter">x</a>
+          <a href="#" aria-label="LinkedIn">in</a>
+          <a href="#" aria-label="GitHub">gh</a>
         </div>
       </div>
     </footer>
-
-  </div>
+  </main>
 
   <script src="script.js"></script>
 </body>
