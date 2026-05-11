@@ -285,7 +285,7 @@ a {
   display: block;
   width: 100%;
   aspect-ratio: 11 / 15;
-  object-fit: cover;
+  object-fit: contain;
   object-position: center;
   border-radius: 3px;
   background: var(--panel-soft);
