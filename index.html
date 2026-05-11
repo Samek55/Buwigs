@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JM Game Store</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+
+    <header class="navbar">
+      <div class="logo">🎮 JM Store</div>
+
+      <input type="text" id="searchInput" placeholder="Search here..." />
+
+      <nav>
+        <a href="#">Discovery</a>
+        <a href="#">Browse</a>
+        <a href="#">News</a>
+      </nav>
+
+      <button class="sign-btn">Sign in</button>
+    </header>
+
+    <section class="hero">
+      <div class="hero-image">
+        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/2195250/header.jpg" alt="FC24">
+      </div>
+
+      <div class="hero-content">
+        <img class="fc-logo" src="https://cdn.cloudflare.steamstatic.com/steam/apps/2195250/header.jpg" alt="FC24 Logo">
+        <p>
+          What happens when football meets modern gaming?
+          Experience realistic gameplay, powerful graphics,
+          and exciting matches in FC24.
+        </p>
+
+        <div class="hero-buttons">
+          <button>Buy now</button>
+          <span>＋ Add to wishlist</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="product-section">
+      <div class="section-header">
+        <h2>Top choices</h2>
+        <div>
+          <button onclick="scrollLeftBox('topChoices')">‹</button>
+          <button onclick="scrollRightBox('topChoices')">›</button>
+        </div>
+      </div>
+
+      <div class="cards" id="topChoices">
+        <div class="card">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="iTunes Giftcard">
+          <h3>iTunes Giftcard</h3>
+          <p>NPR 500.00</p>
+        </div>
+
+        <div class="card">
+          <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/578080/header.jpg" alt="PUBG">
+          <h3>Pubg UC</h3>
+          <p>NPR 1200.00</p>
+        </div>
+
+        <div class="card">
+          <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1928420/header.jpg" alt="Free Fire">
+          <h3>FreeFire Diamond</h3>
+          <p>NPR 950.00</p>
+        </div>
+
+        <div class="card">
+          <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1436990/header.jpg" alt="Valorant">
+          <h3>Valorant Giftcard</h3>
+          <p>NPR 2700.00</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="product-section">
+      <div class="section-header">
+        <h2>Games</h2>
+        <div>
+          <button onclick="scrollLeftBox('games')">‹</button>
+          <button onclick="scrollRightBox('games')">›</button>
+        </div>
+      </div>
+
+      <div class="cards" id="games">
+        <div class="card">
+          <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1817190/header.jpg" alt="Spiderman">
+          <h3>Spiderman Miles Morales</h3>
+          <p>NPR 8500.00</p>
+        </div>
+
+        <div class="card">
+          <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/814380/header.jpg" alt="Sekiro">
+          <h3>Sekiro Shadow Die Twice</h3>
+          <p>NPR 7500.00</p>
+        </div>
+
+        <div class="card">
+          <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1593500/header.jpg" alt="God of War">
+          <h3>God of War Ragnarok</h3>
+          <p>NPR 8500.00</p>
+        </div>
+
+        <div class="card">
+          <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1778820/header.jpg" alt="Tekken 8">
+          <h3>Tekken 8</h3>
+          <p>NPR 12000.00</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div>
+        <h3>🎮 JM Store</h3>
+        <p>Your trusted digital game store.</p>
+      </div>
+
+      <div>
+        <h3>Contact</h3>
+        <p>📍 Kathmandu, Nepal</p>
+        <p>📞 +977 9800000000</p>
+        <p>✉️ jmstore@gmail.com</p>
+      </div>
+
+      <div>
+        <h3>About us</h3>
+        <p>
+          We provide gift cards, game cards, and digital gaming products
+          at affordable prices.
+        </p>
+
+        <div class="socials">
+          <span>●</span>
+          <span>●</span>
+          <span>●</span>
+          <span>●</span>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
