@@ -284,8 +284,9 @@ a {
 .card img {
   display: block;
   width: 100%;
-  aspect-ratio: 4 / 5.15;
+  aspect-ratio: 11 / 15;
   object-fit: cover;
+  object-position: center;
   border-radius: 3px;
   background: var(--panel-soft);
   box-shadow: 0 14px 34px rgba(0, 0, 0, 0.28);
